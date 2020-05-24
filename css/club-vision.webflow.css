@@ -975,6 +975,7 @@
 }
 
 .info-section {
+  overflow: hidden;
   padding: 75px 0px 0px;
   background-color: #1a3a87;
 }
@@ -1540,8 +1541,20 @@
 }
 
 .lite-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 30px;
   padding: 10px 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 100px;
   background-color: #ffe400;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.8);
@@ -1611,8 +1624,20 @@
 }
 
 .standard-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 30px;
   padding: 10px 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 100px;
   background-color: #0f9;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.8);
@@ -1629,8 +1654,20 @@
 }
 
 .pro-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 30px;
   padding: 10px 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 100px;
   background-color: #ff652f;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.8);
@@ -1717,6 +1754,7 @@
 .btn-1:hover {
   border: 2px solid #fff;
   box-shadow: 0 10px 20px 0 rgba(255, 228, 0, 0.3);
+  color: #fff;
 }
 
 .div-block-15 {
@@ -1753,6 +1791,7 @@
 .btn-2:hover {
   border: 2px solid #fff;
   box-shadow: 0 10px 20px 0 rgba(0, 255, 153, 0.3);
+  color: #fff;
 }
 
 .btn-3 {
@@ -1775,6 +1814,7 @@
 .btn-3:hover {
   border: 2px solid #fff;
   box-shadow: 0 10px 20px 0 rgba(255, 101, 47, 0.3);
+  color: #fff;
 }
 
 .image-4 {
@@ -2141,6 +2181,20 @@
   height: 100%;
 }
 
+.div-block-20 {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: auto;
+  bottom: 0%;
+}
+
+.text-block-6 {
+  margin-right: 0px;
+  margin-left: 10px;
+  font-size: 10px;
+}
+
 @media screen and (max-width: 991px) {
   .navigation-bar {
     height: 55px;
@@ -2156,24 +2210,24 @@
     font-size: 15px;
   }
   .nav-links:hover {
-    background-color: transparent;
-    color: #fff;
+    color: #272727;
   }
   .home-content-section {
     overflow: hidden;
+    height: 100vh;
     margin-top: 0px;
     padding-top: 55px;
     background-position: 50% 50%;
   }
   .home-content-wrapper {
-    height: auto;
+    height: 100%;
     -ms-grid-columns: minmax(100%, 1fr) 1fr 1fr;
     grid-template-columns: minmax(100%, 1fr) 1fr 1fr;
-    -ms-grid-rows: minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr);
-    grid-template-rows: minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr);
+    -ms-grid-rows: minmax(33.33%, 33.33%) minmax(33.33%, 33.33%) minmax(33.33%, 33.33%);
+    grid-template-rows: minmax(33.33%, 33.33%) minmax(33.33%, 33.33%) minmax(33.33%, 33.33%);
   }
   .special-fx-wrapper {
-    height: 31vh;
+    height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -2235,11 +2289,11 @@
   }
   .music-wrapper {
     width: 100%;
-    height: 31vh;
+    height: auto;
     border-bottom: 1.5px solid #000;
   }
   .party-items-wrapper {
-    height: 31vh;
+    height: auto;
     border-bottom: 1.5px solid #000;
   }
   .party-items-heading {
@@ -2369,20 +2423,11 @@
   .basic-vip {
     height: 100%;
   }
-  .basic-vip:hover {
-    box-shadow: none;
-  }
   .standard-vip {
     height: 100%;
   }
-  .standard-vip:hover {
-    box-shadow: none;
-  }
   .pro-vip {
     height: 100%;
-  }
-  .pro-vip:hover {
-    box-shadow: none;
   }
   .basic-heading {
     margin-bottom: 20px;
@@ -2416,7 +2461,6 @@
     margin-bottom: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.8);
   }
   .standard-benefit-heading {
     margin-top: 0px;
@@ -2448,7 +2492,6 @@
   }
   .standard-button:hover {
     margin-bottom: 20px;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.8);
   }
   .pro-button {
     margin-bottom: 20px;
@@ -2457,7 +2500,6 @@
   }
   .pro-button:hover {
     margin-bottom: 20px;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.8);
   }
   .about-us-section {
     overflow: hidden;
@@ -2491,8 +2533,7 @@
     font-size: 20px;
   }
   .btn-1:hover {
-    border-color: #ffe400;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.8);
+    color: #fff;
   }
   .div-block-15 {
     padding-top: 20px;
@@ -2516,8 +2557,7 @@
     font-size: 20px;
   }
   .btn-2:hover {
-    border-color: #0f9;
-    box-shadow: 0 10px 20px 0 #000;
+    color: #fff;
   }
   .btn-3 {
     display: -webkit-box;
@@ -2536,8 +2576,7 @@
     font-size: 20px;
   }
   .btn-3:hover {
-    border-color: #ff652f;
-    box-shadow: 0 10px 20px 0 #000;
+    color: #fff;
   }
   .image-4 {
     width: 40%;
@@ -2586,19 +2625,19 @@
     margin-left: 2px;
   }
   .nav-links {
-    width: 60px;
-    font-size: 12px;
+    width: 70px;
+    font-size: 15px;
   }
   .home-content-section {
-    overflow: visible;
-    height: 150vh;
+    overflow: hidden;
+    height: 100vh;
     padding-top: 40px;
   }
   .home-content-wrapper {
     overflow: visible;
   }
   .special-fx-wrapper {
-    height: 50vh;
+    height: auto;
   }
   .text-wrapper {
     margin-right: 50px;
@@ -2611,10 +2650,10 @@
     margin-left: 10px;
   }
   .music-wrapper {
-    height: 50vh;
+    height: auto;
   }
   .party-items-wrapper {
-    height: 50vh;
+    height: auto;
   }
   .load-color-scroll-1 {
     display: none;
@@ -2628,8 +2667,15 @@
   .heading-3 {
     font-size: 25px;
   }
+  .animation-wrapper-v2 {
+    margin-right: 10px;
+    margin-left: 50px;
+  }
   .image-3 {
     display: none;
+  }
+  .banner-section {
+    padding-top: 40px;
   }
   .music-fun-message {
     padding-right: 25px;
@@ -2721,11 +2767,20 @@
   .basic-vip {
     height: 300px;
   }
+  .basic-vip:hover {
+    box-shadow: 0 10px 20px 0 #ffe400;
+  }
   .standard-vip {
     height: 300px;
   }
+  .standard-vip:hover {
+    box-shadow: 0 10px 20px 0 #0f9;
+  }
   .pro-vip {
     height: 300px;
+  }
+  .pro-vip:hover {
+    box-shadow: 0 10px 20px 0 #ff652f;
   }
   .basic-heading {
     font-size: 40px;
@@ -2758,6 +2813,9 @@
     align-items: center;
     font-size: 14px;
   }
+  .lite-button:hover {
+    box-shadow: 0 5px 20px 0 #ffe400;
+  }
   .standard-benefit-heading {
     font-size: 15px;
   }
@@ -2787,6 +2845,9 @@
     align-items: center;
     font-size: 14px;
   }
+  .standard-button:hover {
+    box-shadow: 0 5px 20px 0 #0f9;
+  }
   .pro-button {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2800,7 +2861,11 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.8);
     font-size: 14px;
+  }
+  .pro-button:hover {
+    box-shadow: 0 10px 20px 0 #ff652f;
   }
   .div-block-13 {
     padding-right: 0px;
@@ -2808,6 +2873,7 @@
     padding-left: 0px;
   }
   .text-block-5 {
+    height: 70%;
     padding-right: 10px;
     padding-left: 10px;
     font-size: 12px;
@@ -2889,6 +2955,7 @@
     font-size: 10px;
   }
   .home-content-section {
+    overflow: hidden;
     height: 155vh;
   }
   .music-content {
@@ -2938,6 +3005,9 @@
   .party-items-image {
     width: 100px;
     height: 100px;
+  }
+  .body {
+    overflow: visible;
   }
   .heading-3 {
     font-size: 15px;
